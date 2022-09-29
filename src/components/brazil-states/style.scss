@@ -1,0 +1,90 @@
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity ease 400ms;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;   
+}
+
+.show-state-enter-active,
+.show-state-active {
+    transition: ease 600ms; 
+}
+
+.show-state-enter {
+    opacity: 0; 
+    scale: 0.4;
+    transform: translateY(400px);
+}
+
+.show-state-leave-to {
+ opacity: 0;
+}
+
+.brazil-map__rs {
+    position: absolute;
+    width: 100%;                 
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .maps__section {
+        width: 60%;
+        height: 600px;
+        max-width: 600px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        
+    
+        .map__container {
+            height: 100%;
+            
+            .map__brazil, .map__rs {
+                height: 600px;
+                width: 100%;
+                position: absolute;
+            }
+
+            .map__label {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            .btn {
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-color: #fff;
+                border: none;
+                border-radius: 5px;
+                padding: 5px 10px;
+                color: #007bff;
+                border: 1px solid #007bff;
+                cursor: pointer;
+                transition: 300ms;
+        
+                &::before {
+                    content: '<<'
+                }
+        
+                &:hover {
+                    background-color: #007bff;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    
+    .info__section {
+        width: 30%;
+    }
+}

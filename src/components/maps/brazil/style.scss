@@ -1,0 +1,21 @@
+svg {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 600px;
+    
+      path {
+      fill: #007bff;
+      stroke:#fff;
+      stroke-width: 1px;
+      transition: 300ms;
+      cursor: pointer;
+  
+        &:hover {
+            fill: #004895 !important;
+            stroke-width: 3px;
+        }
+    }
+}
+
+  
